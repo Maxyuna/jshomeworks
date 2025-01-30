@@ -22,7 +22,6 @@ const fetchCharacters = async () => {
             const statusElement = document.createElement("p")
             statusElement.textContent = `Status: ${character.status}`
 
-            const statusChecker = character.status
             if (character.status === "Alive") {
                 statusElement.style.color = "green"
             } else if (character.status === "Dead") {
